@@ -1,3 +1,4 @@
+// Playlist
 const playlist = [
   {
     src: "song1.mp3",
@@ -20,20 +21,20 @@ const playlist = [
 ];
 
 // Elements
-const audio = document.getElementById("audio");
-const playBtn = document.getElementById("playBtn");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const seek = document.getElementById("seek");
-const volume = document.getElementById("volume");
-const autoplay = document.getElementById("autoplay");
-const currentTimeEl = document.getElementById("currentTime");
-const durationEl = document.getElementById("duration");
-const songTitle = document.getElementById("songTitle");
-const songArtist = document.getElementById("songArtist");
-const coverArt = document.getElementById("coverArt");
-const nowPlaying = document.getElementById("nowPlaying");
-const playlistDiv = document.getElementById("playlist");
+let audio = document.getElementById("audio");
+let playBtn = document.getElementById("playBtn");
+let prevBtn = document.getElementById("prevBtn");
+let nextBtn = document.getElementById("nextBtn");
+let seek = document.getElementById("seek");
+let volume = document.getElementById("volume");
+let autoplay = document.getElementById("autoplay");
+let currentTimeEl = document.getElementById("currentTime");
+let durationEl = document.getElementById("duration");
+let songTitle = document.getElementById("songTitle");
+let songArtist = document.getElementById("songArtist");
+let coverArt = document.getElementById("coverArt");
+let nowPlaying = document.getElementById("nowPlaying");
+let playlistDiv = document.getElementById("playlist");
 
 let index = 0;
 let isPlaying = false;
@@ -68,6 +69,8 @@ function pause() {
 
 // Toggle
 playBtn.onclick = () => (isPlaying ? pause() : play());
+
+// Day-2
 
 // Next & Prev
 nextBtn.onclick = () => {
@@ -107,6 +110,8 @@ audio.onended = () => {
 audio.onloadedmetadata = () => {
   durationEl.textContent = format(audio.duration);
 };
+
+// Day-3
 
 // Format seconds → mm:ss
 function format(sec) {

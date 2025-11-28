@@ -1,7 +1,8 @@
+/* Daynamic Music Player CSS */
 body {
     margin: 0;
     font-family: Arial;
-    background: #0f1724;
+    background: #203453;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -13,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: 300px 1fr 250px;
     gap: 20px;
-    background: #111a2c;
+    background: #1f2f4e;
     padding: 20px;
     border-radius: 15px;
 }
@@ -35,7 +36,7 @@ body {
 .controls input[type="range"] {
     width: 100%;
 }
-
+/* Work the second day */
 .time-container {
     display: flex;
     align-items: center;
@@ -53,7 +54,6 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
-
 .track {
     padding: 10px;
     border-radius: 8px;
