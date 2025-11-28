@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="player">
+    <div class="cover">
+        <img id="coverArt" src="https://picsum.photos/seed/cover/600/400" alt="cover">
+        <h2 id="songTitle">Title</h2>
+        <p id="songArtist">Artist</p>
+
+        <div class="main-controls">
+            <button id="prevBtn">⟨</button>
+            <button id="playBtn">Play</button>
+            <button id="nextBtn">⟩</button>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="time-container">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="seek" min="0" max="100" value="0">
+            <span id="duration">0:00</span>
+        </div>
+
+        <div class="volume-row">
+            <label>Volume</label>
+            <input type="range" id="volume" min="0" max="1" value="1" step="0.01">
+        </div>
+
+        <div class="auto">
+            <label>Autoplay</label>
+            <input type="checkbox" id="autoplay">
+        </div>
+
+        <div>
+            Now playing: <span id="nowPlaying">—</span>
+        </div>
+    </div>
+
+    <div class="playlist">
+        <h3>Playlist</h3>
+        <div id="playlist"></div>
+    </div>
+</div>
+
+<audio id="audio" preload="metadata"></audio>
+<script src="js/script.js"></script>
+
+</body>
+</html>
