@@ -1,19 +1,20 @@
 // Playlist
 const playlist = [
   {
-    src: "song1.mp3",
+    src: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Corporate__Motivational_Music/Scott_Holmes_Music_-_04_-_Upbeat_Party.mp3",
+
     title: "Song One",
     artist: "Artist A",
     cover: "https://picsum.photos/seed/1/600",
   },
   {
-    src: "song2.mp3",
+    src: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Classical_Sampler/Kevin_MacLeod_-_Canon_in_D_Major.mp3",
     title: "Song Two",
     artist: "Artist B",
     cover: "https://picsum.photos/seed/2/600",
   },
   {
-    src: "song3.mp3",
+    src: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator Jahzzar/Urban_Elysium/Jahzzar_-_Siesta.mp3",
     title: "Song Three",
     artist: "Artist C",
     cover: "https://picsum.photos/seed/3/600",
